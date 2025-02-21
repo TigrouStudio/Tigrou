@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        body {
+            display: flex;
+            height: 100vh;
+            background-color: #f6f8fc;
+        }
+        /* Sidebar */
+        .sidebar {
+            width: 250px;
+            background: #fff;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar button {
+            background: #c2e7ff;
+            border: none;
+            padding: 10px;
+            border-radius: 20px;
+            text-align: left;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .menu {
+            margin-top: 20px;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            font-size: 14px;
+            color: #202124;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .menu-item:hover {
+            background: #f1f3f4;
+        }
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            background: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        .search-bar {
+            width: 60%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+        }
+        .emails {
+            flex: 1;
+            padding: 20px;
+        }
+        .email-item {
+            background: #fff;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        .email-item:hover {
+            background: #f1f3f4;
+        }
+        .email-header {
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .email-body {
+            font-size: 12px;
+            color: #5f6368;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <button>+ Compose</button>
+        <div class="menu">
+            <div class="menu-item">📥 Inbox</div>
+            <div class="menu-item">⭐ Starred</div>
+            <div class="menu-item">📨 Sent</div>
+            <div class="menu-item">🗑 Trash</div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <h2>Gmail</h2>
+            <input type="text" class="search-bar" placeholder="Search mail">
+        </div>
+        <div class="emails">
+            <div class="email-item">
+                <div class="email-header">Google Support</div>
+                <div class="email-body">Your account security update...</div>
+            </div>
+            <div class="email-item">
+                <div class="email-header">Look behind you</div>
+                <div class="email-body">Something is chasing me... HELP!!!</div>
+            </div>
+            <div class="email-item">
+                <div class="email-header">Ad</div>
+                <div class="email-body">Game made by Tigrou.</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
